@@ -25,7 +25,7 @@ def startArmPi():
     RPCServer.QUEUE = QUEUE_RPC
 
     threading.Thread(target=RPCServer.startRPCServer,
-                     daemon=True).start()  # rpc服务器
+                     daemon=True).start()  # RPC Server
     threading.Thread(target=MjpgServer.startMjpgServer,
                      daemon=True).start()  # mjpg流服务器
     
